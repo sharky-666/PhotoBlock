@@ -1,7 +1,15 @@
 # PhotoBlock
 
+> 开发模式：**VibeCoding**
+
 摄影作品集网站演示模板。前端保留原有 React UI，后端使用
 Cloudflare Workers、D1 和阿里云 OSS。
+
+## VibeCoding
+
+本项目以 VibeCoding 方式完成需求拆解、代码迭代、问题诊断、测试和部署。开发过程结合自然语言需求、AI 辅助实现、人工验收以及类型检查、Lint、生产构建和真实运行验证。
+
+完整开发过程见 [项目开发日志.md](./项目开发日志.md)。
 
 ## 当前状态
 
