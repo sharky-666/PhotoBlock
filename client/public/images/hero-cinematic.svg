@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="暗金色山雾摄影背景">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#080808"/>
+      <stop offset=".38" stop-color="#17140f"/>
+      <stop offset=".68" stop-color="#302718"/>
+      <stop offset="1" stop-color="#080706"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="72%" cy="35%" r="42%">
+      <stop offset="0" stop-color="#e1b85f" stop-opacity=".55"/>
+      <stop offset=".3" stop-color="#c3953e" stop-opacity=".19"/>
+      <stop offset="1" stop-color="#c3953e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ridgeFar" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#312a1d"/>
+      <stop offset="1" stop-color="#16130e"/>
+    </linearGradient>
+    <linearGradient id="ridgeMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#191711"/>
+      <stop offset="1" stop-color="#080807"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d2b067" stop-opacity="0"/>
+      <stop offset=".42" stop-color="#d2b067" stop-opacity=".13"/>
+      <stop offset=".68" stop-color="#f0d08a" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#d2b067" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blurMist" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <filter id="blurNear" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="17"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 .085"/>
+      </feComponentTransfer>
+    </filter>
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity=".2"/>
+      <stop offset=".42" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".72"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect width="1600" height="900" fill="url(#sunGlow)"/>
+
+  <g fill="#f8e1a8" opacity=".2">
+    <circle cx="1215" cy="150" r="1"/>
+    <circle cx="1328" cy="224" r=".8"/>
+    <circle cx="1084" cy="118" r=".7"/>
+    <circle cx="1420" cy="96" r=".9"/>
+    <circle cx="955" cy="192" r=".6"/>
+  </g>
+
+  <path d="M0 540 170 410l118 70 173-164 158 177 148-114 192 176 121-77 197 144 183-194 110 111v284H0z" fill="url(#ridgeFar)" opacity=".72"/>
+  <path d="M0 632 218 465l151 121 181-189 194 227 134-103 213 184 155-107 234 177 120-75v251H0z" fill="#12100c" opacity=".9"/>
+  <path d="M-80 654c300-96 550-55 790-6 284 58 562 48 970-73v176c-380 90-661 91-977 32-243-46-488-48-783 31z" fill="url(#mist)" filter="url(#blurMist)"/>
+  <path d="M0 725c212-72 411-74 632-17 241 62 486 66 968-48v240H0z" fill="url(#ridgeMid)"/>
+  <path d="M0 793c264-75 486-55 704 2 246 64 511 61 896-40v145H0z" fill="#040404"/>
+
+  <g fill="#030303" filter="url(#blurNear)" opacity=".9">
+    <path d="M92 764l18-163 13 163z"/>
+    <path d="M126 785l25-205 18 205z"/>
+    <path d="M1510 780l20-194 16 194z"/>
+    <path d="M1472 800l26-240 20 240z"/>
+  </g>
+
+  <rect width="1600" height="900" fill="url(#vignette)"/>
+  <rect width="1600" height="900" filter="url(#grain)" opacity=".48"/>
+</svg>

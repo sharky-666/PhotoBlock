@@ -1,0 +1,21 @@
+{"cases":[
+  {"id":1,"priority":"p0","description":"打开首页，预期 Hero 区显示 LIU MING 大标题且背景图加载成功"},
+  {"id":2,"priority":"p0","description":"首页向下滚动，预期 About the Artist 区显示刘铭名字和引用语"},
+  {"id":3,"priority":"p0","description":"首页 SELECTED SERIES 区，预期显示至少 3 个系列卡片，各有封面图、中英文标题、年份"},
+  {"id":4,"priority":"p0","description":"点击精选系列中的第一个系列卡片，预期跳转到系列详情页并显示该系列名称"},
+  {"id":5,"priority":"p0","description":"系列详情页中，预期画廊显示多张作品图片，点击首张图打开灯箱"},
+  {"id":6,"priority":"p1","description":"灯箱打开后，预期显示大图和左右切换按钮，按 ESC 键关闭灯箱"},
+  {"id":7,"priority":"p1","description":"首页 MORE WORKS 区，预期显示 3 个分类卡片，各带封面图和作品数量"},
+  {"id":8,"priority":"p1","description":"首页 STATS 区，预期显示 4 个统计数字且数字不为 0"},
+  {"id":9,"priority":"p1","description":"点击导航栏返回首页，预期回到首页顶部"},
+  {"id":10,"priority":"p2","description":"打开管理后台页面 /admin，预期显示三个 tab（作品管理/系列管理/分类管理）"},
+  {"id":11,"priority":"p1","description":"滚动到页脚，预期社交图标链接以 https:// 开头且 target 为 _blank"},
+  {"id":12,"priority":"p1","description":"系列详情页打开灯箱，预期右上角有下载按钮且与关闭按钮样式一致"},
+  {"id":13,"priority":"p0","description":"首页滚动到 About 区，预期左侧显示艺术家人物图片（非空白、非裂图），右侧显示文字介绍"},
+  {"id":14,"priority":"p0","description":"首页点击 About 区图片打开灯箱，预期左上角有带箭头和'返回'文字的返回按钮，点击后灯箱关闭且回到首页"},
+  {"id":15,"priority":"p0","description":"导航栏点击作品→图片作品，预期跳转到 /works/photos 页面并显示'图片作品'标题和作品网格"},
+  {"id":16,"priority":"p0","description":"图片作品库页面，点击分类筛选切换分类，预期作品列表更新为该分类作品"},
+  {"id":17,"priority":"p0","description":"图片作品库页面，点击作品图片打开灯箱，预期灯箱正常显示并可关闭返回"},
+  {"id":18,"priority":"p1","description":"导航栏点击作品→视频作品，预期跳转到 /works/videos 页面并显示'视频作品'标题和视频网格"},
+  {"id":19,"priority":"p1","description":"二级页面顶部导航栏与首页一致，点击品牌/关于可正常跳转"}
+]}

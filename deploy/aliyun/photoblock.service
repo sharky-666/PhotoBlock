@@ -1,0 +1,23 @@
+[Unit]
+Description=Photoblock Node API
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=photoblock
+Group=photoblock
+WorkingDirectory=/srv/photoblock/current
+EnvironmentFile=/srv/photoblock/shared/.env
+ExecStart=/usr/bin/node /srv/photoblock/current/server.mjs
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ReadWritePaths=/srv/photoblock/shared
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target

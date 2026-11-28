@@ -1,0 +1,13 @@
+MEDIA_BASE_URL=https://media.example.com
+ALIYUN_OSS_REGION=oss-cn-shanghai
+ALIYUN_OSS_BUCKET=example-media-bucket
+ALIYUN_OSS_ENDPOINT=https://oss-cn-shanghai.aliyuncs.com
+ALIYUN_OSS_ACCESS_KEY_ID=replace-with-ram-access-key-id
+ALIYUN_OSS_ACCESS_KEY_SECRET=replace-with-ram-access-key-secret
+ALIYUN_OSS_PREFIX=uploads
+PUBLIC_SITE_URL=https://demo.example.com
+ADMIN_BOOTSTRAP_USERNAME=admin
+ADMIN_BOOTSTRAP_PASSWORD=replace-with-at-least-12-characters
+VIEW_HASH_SECRET=replace-with-a-long-random-secret
+CF_ACCESS_AUD=replace-with-cloudflare-access-application-audience
+CF_ACCESS_TEAM_DOMAIN=https://your-team.cloudflareaccess.com

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="黑金色山脊摄影背景">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#020202"/>
+      <stop offset=".48" stop-color="#070707"/>
+      <stop offset=".76" stop-color="#0d0d0c"/>
+      <stop offset="1" stop-color="#030303"/>
+    </linearGradient>
+    <radialGradient id="silverHaze" cx="66%" cy="34%" r="46%">
+      <stop offset="0" stop-color="#bfc3c5" stop-opacity=".15"/>
+      <stop offset=".42" stop-color="#8c8e8e" stop-opacity=".045"/>
+      <stop offset="1" stop-color="#8c8e8e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldHorizon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c9a45d" stop-opacity="0"/>
+      <stop offset=".43" stop-color="#c9a45d" stop-opacity=".06"/>
+      <stop offset=".66" stop-color="#efd493" stop-opacity=".32"/>
+      <stop offset=".82" stop-color="#c9a45d" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#c9a45d" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ridgeFar" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d1e1f"/>
+      <stop offset=".56" stop-color="#101112"/>
+      <stop offset="1" stop-color="#070707"/>
+    </linearGradient>
+    <linearGradient id="ridgeMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#121314"/>
+      <stop offset="1" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="ridgeNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#090909"/>
+      <stop offset="1" stop-color="#010101"/>
+    </linearGradient>
+    <linearGradient id="silverMist" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c6c7c4" stop-opacity="0"/>
+      <stop offset=".32" stop-color="#c6c7c4" stop-opacity=".025"/>
+      <stop offset=".59" stop-color="#d7d5cf" stop-opacity=".085"/>
+      <stop offset=".79" stop-color="#d7d5cf" stop-opacity=".028"/>
+      <stop offset="1" stop-color="#c6c7c4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity=".38"/>
+      <stop offset=".38" stop-color="#000" stop-opacity=".08"/>
+      <stop offset=".72" stop-color="#000" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".82"/>
+    </linearGradient>
+    <filter id="softMist" x="-10%" y="-50%" width="120%" height="200%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="fineGrain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".88" numOctaves="2" seed="23" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 .035"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect width="1600" height="900" fill="url(#silverHaze)"/>
+
+  <g fill="#f4e5bd" opacity=".2">
+    <circle cx="1232" cy="129" r=".8"/>
+    <circle cx="1351" cy="186" r=".6"/>
+    <circle cx="1106" cy="91" r=".55"/>
+    <circle cx="1434" cy="84" r=".7"/>
+    <circle cx="982" cy="166" r=".5"/>
+  </g>
+
+  <path d="M0 539 137 440l94 47 127-129 107 101 110-83 132 141 120-83 140 108 129-171 126 117 128-94 170 160v283H0z" fill="url(#ridgeFar)" opacity=".95"/>
+  <path d="M0 548 137 449l94 47 127-129 107 101 110-83 132 141 120-83 140 108 129-171 126 117 128-94 170 160" fill="none" stroke="#d6c28d" stroke-opacity=".15" stroke-width="1.2"/>
+
+  <path d="M-20 633 155 509l108 77 119-136 126 127 121-92 148 151 150-118 164 133 127-115 141 108 120-83 170 147" fill="none" stroke="url(#goldHorizon)" stroke-width="2"/>
+
+  <path d="M0 633 155 509l108 77 119-136 126 127 121-92 148 151 150-118 164 133 127-115 141 108 120-83 170 147v258H0z" fill="url(#ridgeMid)"/>
+  <path d="M-70 695c296-86 558-74 811-16 286 65 555 71 929-31v118c-369 94-678 89-981 29-258-51-500-51-759 21z" fill="url(#silverMist)" filter="url(#softMist)"/>
+
+  <path d="M0 752c180-65 357-84 553-43 197 41 369 75 566 52 169-20 333-55 501-101v240H0z" fill="url(#ridgeNear)"/>
+  <path d="M0 752c180-65 357-84 553-43 197 41 369 75 566 52 169-20 333-55 501-101" fill="none" stroke="#d7c18e" stroke-opacity=".055" stroke-width="1"/>
+  <path d="M0 824c260-50 462-22 668 14 250 43 516 31 932-36v98H0z" fill="#010101"/>
+
+  <rect width="1600" height="900" fill="url(#vignette)"/>
+  <rect width="1600" height="900" filter="url(#fineGrain)" opacity=".24"/>
+</svg>

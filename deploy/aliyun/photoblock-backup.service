@@ -1,0 +1,12 @@
+[Unit]
+Description=Photoblock SQLite backup
+After=photoblock.service
+
+[Service]
+Type=oneshot
+User=photoblock
+Group=photoblock
+EnvironmentFile=/srv/photoblock/shared/.env
+Environment=BACKUP_DIR=/srv/photoblock/shared/backups
+Environment=BACKUP_RETENTION_DAYS=14
+ExecStart=/usr/bin/node /srv/photoblock/shared/backup-sqlite.mjs

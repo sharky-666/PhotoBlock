@@ -1,0 +1,58 @@
+import type { HomepageCopy } from './api.interface';
+
+export const DEFAULT_HOMEPAGE_COPY: HomepageCopy = {
+  heroMainTitle: '演示摄影师',
+  heroSubtitle: 'Photography Portfolio Demo',
+  heroSlogan: '「以镜头记录光，以作品讲述故事」',
+  signatureUrl: '',
+  heroHonors: '演示作品集 / 通用模板 / 可替换内容',
+  imageWorksTitle: '作品浏览演示',
+  imageWorksSubtitle: '用于展示图片作品的布局与交互效果',
+  imageSeriesTitle: '按系列整理的作品',
+  imageSeriesSubtitle: '演示项目不包含任何真实作品素材',
+  imageCategoriesTitle: '浏览更多分类',
+  videoWorksTitle: '视频作品演示',
+  videoWorksSubtitle: '用于展示视频作品的页面布局',
+  videoSeriesTitle: '视频系列演示',
+  videoSeriesSubtitle: '可使用后台替换为经授权的内容',
+  videoCategoriesTitle: '视频分类演示',
+  aboutTitle: '可自由替换的作品集模板',
+  aboutBody:
+    '这是一套使用演示内容的摄影作品集模板。页面中的人物、履历、奖项、联系方式和社交账号均为虚构示例，不代表任何真实个人或机构。部署前请在后台替换为经授权使用的真实内容。',
+  aboutQuote: '先让内容清楚，再让作品发声。',
+  aboutQuoteAuthor: '—— Demo Studio',
+  aboutPortraitUrl: '',
+  bioTitle: '演示档案说明',
+  bioBody:
+    '本页内容仅用于展示网站布局与交互，不包含真实姓名、履历、荣誉、联系方式或个人账号。\n\n正式发布前，请删除所有演示说明，并替换为经权利人授权的项目资料和作品素材。',
+  bioPhilosophy: '使用清楚的内容结构，让作品和项目信息更容易被浏览。',
+  bioManifesto: '替换内容并完成授权确认后再正式发布。',
+  profileName: '示例作者',
+  profileStageName: 'Demo Studio',
+  profileBirthday: '',
+  profileLocation: '示例城市',
+  profileStyle: '作品展示 / 视觉叙事 / 商业摄影',
+  profileExpertise: '内容管理 / 作品集展示 / 项目演示',
+  resumeExperience:
+    '20XX - 示例项目经历\n20XX - 演示合作项目\n20XX - 作品集内容更新',
+  resumeAwards:
+    '20XX - 示例荣誉占位项\n20XX - 示例提名占位项',
+  resumeExhibitions:
+    '20XX - 示例展览占位项\n20XX - 示例展示活动',
+  statsTitle: '项目内容与作品数据概览',
+  statsArtworksLabel: '幅作品',
+  statsSeriesLabel: '个系列',
+  statsCitiesLabel: '座城市',
+  statsCountriesLabel: '个国家',
+  ctaTitle: '为你的作品准备一页清楚的开始。',
+  ctaSubtitle: '替换演示内容并完成授权确认后，即可作为正式作品集发布。',
+  ctaButtonText: '查看合作信息',
+  cooperationTitle: '演示合作信息',
+  cooperationScope: '摄影项目\n视觉合作\n内容展示\n品牌项目',
+  cooperationEmail: 'hello@example.com',
+  cooperationWechat: 'demo_studio',
+  cooperationPhone: '000-0000-0000',
+  cooperationProcess:
+    '1. 需求沟通 - 明确项目背景与交付要求\n2. 内容准备 - 确认已获授权的资料与素材\n3. 方案确认 - 确定展示方式和时间安排\n4. 项目执行 - 完成约定范围内的制作\n5. 验收交付 - 核对内容并完成发布',
+  footerCopyright: '演示内容仅用于模板展示',
+};
