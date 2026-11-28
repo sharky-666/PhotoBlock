@@ -2,6 +2,7 @@
   "name": "photoblock",
   "version": "2.3.0",
   "private": true,
+  "license": "MIT",
   "flags": {
     "supportBusinessUser": true,
     "supportScrollReveal": true,

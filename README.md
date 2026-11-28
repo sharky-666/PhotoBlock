@@ -125,10 +125,8 @@ pnpm exec wrangler secret put ALIYUN_OSS_ACCESS_KEY_SECRET
 旧后端管理员密码通过 `ADMIN_BOOTSTRAP_PASSWORD` 环境变量初始化，
 不再创建固定默认密码。
 
-## 授权说明
+## 开源许可
 
-本仓库不授予任何使用、修改、分发、部署或商业使用许可。
-版权所有者保留所有权利。
+本项目基于 [MIT License](./LICENSE) 开源，可以自由使用、复制、修改、合并、发布、分发、再许可和销售软件的副本。
 
-完整声明见 [NOTICE.md](./NOTICE.md)。本项目不是法律意义上的开源项目，
-也不附带 MIT、Apache、GPL、BSD 等开源许可证。
+使用第三方依赖时，仍需遵守各依赖自身的许可证；演示占位内容不构成对任何真实人物、作品或品牌授权的替代。
